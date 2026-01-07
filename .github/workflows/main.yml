@@ -1,8 +1,8 @@
 name: AutoUpdate
 on:
   schedule:
-    - cron: '0 20 * * *' # 每天凌晨4点自动跑
-  workflow_dispatch: # 允许手动点击运行
+    - cron: '0 20 * * *'
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -10,14 +10,14 @@ permissions:
   id-token: write
 
 jobs:
-  build-and-deploy:
+  do-everything: # 合并为一个任务，避免冲突
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4 # 升级到 v4
+        uses: actions/checkout@v4
 
       - name: Set up Python
-        uses: actions/setup-python@v5 # 升级到 v5
+        uses: actions/setup-python@v5
         with:
           python-version: '3.9'
 
@@ -27,27 +27,21 @@ jobs:
       - name: Run Search Script
         run: python update.py
 
-      - name: Commit changes
+      - name: Commit and Push
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add tv.json
-          git commit -m "自动更新全网急速源" || echo "没有变化"
+          git commit -m "Update TV sources" || echo "No changes"
           git push
-# 在 git push 步骤之后添加这两段：
-      - name: Upload artifact
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload Pages Artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.' # 必须上传根目录，包含 tv.json
+          path: '.' # 只在这里上传一次
+
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
-      # 关键修复：升级发布插件到 v4 相关版本
-      - name: Setup Pages
-        uses: actions/configure-pages@v4 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3 # 升级到 v3 (Pages 专用版)
-        with:
-          path: '.' 
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4 # 升级到 v4
