@@ -1,37 +1,37 @@
 {
   "cache_time": 9200,
   "api_site": {
-    "auto_3923": {
-      "api": "https://suoniapi.com/api.php/provide/vod",
-      "name": "🚀 自动源_2 | 150ms",
-      "detail": "https://suoniapi.com/api.php/provide/vod"
-    },
     "sn_4k": {
       "api": "https://suoniapi.com/api.php/provide/vod",
-      "name": "💎 索尼·4K重型 | 185ms",
+      "name": "💎 索尼·4K重型 | 329ms",
       "detail": "https://suoniapi.com/api.php/provide/vod"
     },
-    "auto_3405": {
+    "auto_2700": {
+      "api": "https://suoniapi.com/api.php/provide/vod",
+      "name": "🚀 自动源_2 | 333ms",
+      "detail": "https://suoniapi.com/api.php/provide/vod"
+    },
+    "auto_231": {
       "api": "https://cj.lziapi.com/api.php/provide/vod",
-      "name": "🚀 自动源_4 | 192ms",
+      "name": "🚀 自动源_4 | 679ms",
       "detail": "https://cj.lziapi.com/api.php/provide/vod"
     },
-    "auto_2259": {
+    "auto_5548": {
       "api": "https://bfzyapi.com/api.php/provide/vod",
-      "name": "🚀 自动源_1 | 609ms",
+      "name": "🚀 自动源_1 | 849ms",
       "detail": "https://bfzyapi.com/api.php/provide/vod"
     },
-    "auto_4654": {
+    "auto_3471": {
       "api": "http://cj.ffzyapi.com/api.php/provide/vod",
-      "name": "🚀 自动源_5 | 6051ms",
+      "name": "🚀 自动源_5 | 1279ms",
       "detail": "http://cj.ffzyapi.com/api.php/provide/vod"
     },
-    "auto_8024": {
+    "auto_735": {
       "api": "https://haiwaikan.com/api.php/provide/vod",
       "name": "🚀 自动源_0 | 极速线ms",
       "detail": "https://haiwaikan.com/api.php/provide/vod"
     },
-    "auto_6566": {
+    "auto_4414": {
       "api": "https://api.kuaifan.tv/api.php/provide/vod",
       "name": "🚀 自动源_3 | 极速线ms",
       "detail": "https://api.kuaifan.tv/api.php/provide/vod"
