@@ -1,192 +1,47 @@
 {
   "cache_time": 9200,
   "api_site": {
-    "sn_alt": {
+    "auto_3923": {
       "api": "https://suoniapi.com/api.php/provide/vod",
-      "name": "💎 索尼·备用线",
-      "detail": "https://suoniapi.com/"
-    },
-    "k4_zy": {
-      "api": "https://api.zuidapi.com/api.php/provide/vod",
-      "name": "💎 4K·重型特线",
-      "detail": "https://api.zuidapi.com/"
-    },
-    "wj_zy": {
-      "api": "https://api.wujinapi.cc/api.php/provide/vod",
-      "name": "🎖 无尽·高频宽",
-      "detail": "https://api.wujinapi.cc/"
+      "name": "🚀 自动源_2 | 150ms",
+      "detail": "https://suoniapi.com/api.php/provide/vod"
     },
     "sn_4k": {
       "api": "https://suoniapi.com/api.php/provide/vod",
-      "name": "💎 索尼·4K原生",
-      "detail": "https://suoniapi.com/"
+      "name": "💎 索尼·4K重型 | 185ms",
+      "detail": "https://suoniapi.com/api.php/provide/vod"
     },
-    "js_zy": {
-      "api": "https://jszyapi.com/api.php/provide/vod",
-      "name": "⚡ 极速·节点优化",
-      "detail": "https://jszyapi.com/"
-    },
-    "hy_zy": {
-      "api": "https://www.huyaapi.com/api.php/provide/vod",
-      "name": "🐯 虎牙·视频采集",
-      "detail": "https://www.huyaapi.com/"
-    },
-    "lz_4k": {
+    "auto_3405": {
       "api": "https://cj.lziapi.com/api.php/provide/vod",
-      "name": "💎 量子·骨干加速",
-      "detail": "https://cj.lziapi.com/"
+      "name": "🚀 自动源_4 | 192ms",
+      "detail": "https://cj.lziapi.com/api.php/provide/vod"
     },
-    "hn_zy": {
-      "api": "https://www.hongniuzy2.com/api.php/provide/vod",
-      "name": "⚡ 红牛·全能加载",
-      "detail": "https://www.hongniuzy2.com/"
-    },
-    "bf_cdn": {
+    "auto_2259": {
       "api": "https://bfzyapi.com/api.php/provide/vod",
-      "name": "📡 暴风·CDN分发版",
-      "detail": "https://bfzyapi.com/"
+      "name": "🚀 自动源_1 | 609ms",
+      "detail": "https://bfzyapi.com/api.php/provide/vod"
     },
-    "yy_zy": {
-      "api": "https://cj.yayazy.net/api.php/provide/vod",
-      "name": "🍎 丫丫·画质修复",
-      "detail": "https://cj.yayazy.net/"
+    "auto_4654": {
+      "api": "http://cj.ffzyapi.com/api.php/provide/vod",
+      "name": "🚀 自动源_5 | 6051ms",
+      "detail": "http://cj.ffzyapi.com/api.php/provide/vod"
     },
-    "ty_zy": {
-      "api": "https://tyyszy.com/api.php/provide/vod",
-      "name": "🌈 天涯·极清影视",
-      "detail": "https://tyyszy.com/"
+    "auto_8024": {
+      "api": "https://haiwaikan.com/api.php/provide/vod",
+      "name": "🚀 自动源_0 | 极速线ms",
+      "detail": "https://haiwaikan.com/api.php/provide/vod"
     },
-    "sd_zy": {
-      "api": "https://sdzyapi.com/api.php/provide/vod",
-      "name": "⚡ 闪电·直连大带宽",
-      "detail": "https://sdzyapi.com/"
-    },
-    "nn_zy": {
-      "api": "https://api.niuniuzy.me/api.php/provide/vod",
-      "name": "🥤 牛牛·稳定吞吐",
-      "detail": "https://api.niuniuzy.me/"
-    },
-    "xl_zy": {
-      "api": "https://api.xinlangapi.com/xinlangapi.php/provide/vod",
-      "name": "☁ 新浪·即时采集",
-      "detail": "https://api.xinlangapi.com/xinlang"
-    },
-    "zd_zy": {
-      "api": "https://api.zuidapi.com/api.php/provide/vod",
-      "name": "🎬 最大·资源储备",
-      "detail": "https://api.zuidapi.com/"
-    },
-    "jy_zy": {
-      "api": "https://jyzyapi.com/api.php/provide/vod",
-      "name": "🎖 金鹰·稳定链路",
-      "detail": "https://jyzyapi.com/"
-    },
-    "gs_zy": {
-      "api": "https://api.guangsuapi.com/api.php/provide/vod",
-      "name": "🚀 光速·极速响应",
-      "detail": "https://api.guangsuapi.com/"
-    },
-    "ck_zy": {
-      "api": "https://ckzy.me/api.php/provide/vod",
-      "name": "🎞 CK·稳定重型",
-      "detail": "https://ckzy.me/"
-    },
-    "uk_zy": {
-      "api": "https://api.ukuapi.com/api.php/provide/vod",
-      "name": "🍎 U酷·带宽大户",
-      "detail": "https://api.ukuapi.com/"
-    },
-    "hh_zy": {
-      "api": "https://hhzyapi.com/api.php/provide/vod",
-      "name": "🎬 豪华·新剧专场",
-      "detail": "https://hhzyapi.com/"
-    },
-    "cy_hd": {
-      "api": "https://盒子迷.top/春盈天下",
-      "name": "🔥 春盈·4K蓝光霸主",
-      "detail": "https://盒子迷.top/春盈天下"
-    },
-    "ik_zy": {
-      "api": "https://ikunzyapi.com/api.php/provide/vod",
-      "name": "🌈 iKun·专线加速",
-      "detail": "https://ikunzyapi.com/"
-    },
-    "yh_dm": {
-      "api": "https://m3u8.apiyhzy.com/api.php/provide/vod",
-      "name": "🌸 樱花·动漫专线",
-      "detail": "https://m3u8.apiyhzy.com/"
-    },
-    "db_zy": {
-      "api": "https://caiji.dbzy.tv/api.php/provide/vod",
-      "name": "🎬 豆瓣·高分原片",
-      "detail": "https://caiji.dbzy.tv/"
-    },
-    "sb_zy": {
-      "api": "https://subocaiji.com/api.php/provide/vod",
-      "name": "🐯 速博·极速专线",
-      "detail": "https://subocaiji.com/"
-    },
-    "mt_zy": {
-      "api": "https://caiji.maotaizy.cc/api.php/provide/vod",
-      "name": "🐾 茅台·醇厚资源",
-      "detail": "https://caiji.maotaizy.cc/"
-    },
-    "qj_zy": {
-      "api": "http://cdn.qiaoji8.com/tvbox.json",
-      "name": "🎞 巧技·CDN中心",
-      "detail": "http://cdn.qiaoji8.com/tvbox.json"
-    },
-    "md_dm": {
-      "api": "https://www.mdzyapi.com/api.php/provide/vod",
-      "name": "🌸 魔都·动漫高频宽",
-      "detail": "https://www.mdzyapi.com/"
-    },
-    "wxe_zy": {
-      "api": "http://tvbox.xn--4kq62z5rby2qupq9ub.top/",
-      "name": "🏮 王小二·高码率",
-      "detail": "http://tvbox.xn--4kq62z5rby2qupq9ub.top/"
-    },
-    "dh_zy": {
-      "api": "https://毒盒.com/tv",
-      "name": "✨ 毒盒·主力机房",
-      "detail": "https://毒盒.com/tv"
-    },
-    "ry_zy": {
-      "api": "https://cj.rycjapi.com/api.php/provide/vod",
-      "name": "🔒 如意·长线稳定",
-      "detail": "https://cj.rycjapi.com/"
-    },
-    "ok_zy": {
-      "api": "http://ok321.top/tv",
-      "name": "⚡ OK·大带宽专区",
-      "detail": "http://ok321.top/tv"
-    },
-    "q360_zy": {
-      "api": "https://360zy.com/api.php/provide/vod",
-      "name": "🔒 360·影视安全",
-      "detail": "https://360zy.com/"
-    },
-    "yz_hd": {
-      "api": "https://api.yzzy-api.com/inc/ldg_api_all.php/provide/vod",
-      "name": "🔥 优质·1080P特线",
-      "detail": "https://api.yzzy-api.com/inc/ldg_api_all.php/provide/vod"
+    "auto_6566": {
+      "api": "https://api.kuaifan.tv/api.php/provide/vod",
+      "name": "🚀 自动源_3 | 极速线ms",
+      "detail": "https://api.kuaifan.tv/api.php/provide/vod"
     }
   },
   "custom_category": [
     {
-      "name": "4K重型专区",
+      "name": "全网急速·搜刮",
       "type": "movie",
       "query": "4K"
-    },
-    {
-      "name": "华语精选",
-      "type": "movie",
-      "query": "华语"
-    },
-    {
-      "name": "Netflix",
-      "type": "movie",
-      "query": "网飞"
     }
   ]
 }
