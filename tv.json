@@ -2,23 +2,23 @@
   "cache_time": 9200,
   "api_site": {
     "auto_0": {
-      "api": "https://suoniapi.com/api.php/provide/vod",
-      "name": "🚀 极速源_01 | 75ms",
-      "detail": "https://suoniapi.com/"
+      "api": "https://cj.lziapi.com/api.php/provide/vod",
+      "name": "🚀 极速源_01 | 243ms",
+      "detail": "https://cj.lziapi.com/"
     },
     "auto_1": {
-      "api": "https://bfzyapi.com/api.php/provide/vod",
-      "name": "🚀 极速源_02 | 127ms",
-      "detail": "https://bfzyapi.com/"
+      "api": "https://suoniapi.com/api.php/provide/vod",
+      "name": "🚀 极速源_02 | 251ms",
+      "detail": "https://suoniapi.com/"
     },
     "auto_2": {
-      "api": "https://cj.lziapi.com/api.php/provide/vod",
-      "name": "🚀 极速源_03 | 436ms",
-      "detail": "https://cj.lziapi.com/"
+      "api": "https://bfzyapi.com/api.php/provide/vod",
+      "name": "🚀 极速源_03 | 716ms",
+      "detail": "https://bfzyapi.com/"
     },
     "auto_3": {
       "api": "http://cj.ffzyapi.com/api.php/provide/vod",
-      "name": "🚀 极速源_04 | 998ms",
+      "name": "🚀 极速源_04 | 1613ms",
       "detail": "http://cj.ffzyapi.com/"
     }
   },
