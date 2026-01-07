@@ -1,47 +1,37 @@
 {
   "cache_time": 9200,
   "api_site": {
-    "sn_4k": {
+    "auto_source_0": {
       "api": "https://suoniapi.com/api.php/provide/vod",
-      "name": "💎 索尼·4K重型 | 329ms",
-      "detail": "https://suoniapi.com/api.php/provide/vod"
+      "name": "🚀 全网急速_1 | 150ms",
+      "detail": "https://suoniapi.com/"
     },
-    "auto_2700": {
-      "api": "https://suoniapi.com/api.php/provide/vod",
-      "name": "🚀 自动源_2 | 333ms",
-      "detail": "https://suoniapi.com/api.php/provide/vod"
-    },
-    "auto_231": {
-      "api": "https://cj.lziapi.com/api.php/provide/vod",
-      "name": "🚀 自动源_4 | 679ms",
-      "detail": "https://cj.lziapi.com/api.php/provide/vod"
-    },
-    "auto_5548": {
+    "auto_source_1": {
       "api": "https://bfzyapi.com/api.php/provide/vod",
-      "name": "🚀 自动源_1 | 849ms",
-      "detail": "https://bfzyapi.com/api.php/provide/vod"
+      "name": "🚀 全网急速_2 | 244ms",
+      "detail": "https://bfzyapi.com/"
     },
-    "auto_3471": {
+    "auto_source_2": {
+      "api": "https://cj.lziapi.com/api.php/provide/vod",
+      "name": "🚀 全网急速_3 | 579ms",
+      "detail": "https://cj.lziapi.com/"
+    },
+    "auto_source_3": {
       "api": "http://cj.ffzyapi.com/api.php/provide/vod",
-      "name": "🚀 自动源_5 | 1279ms",
-      "detail": "http://cj.ffzyapi.com/api.php/provide/vod"
-    },
-    "auto_735": {
-      "api": "https://haiwaikan.com/api.php/provide/vod",
-      "name": "🚀 自动源_0 | 极速线ms",
-      "detail": "https://haiwaikan.com/api.php/provide/vod"
-    },
-    "auto_4414": {
-      "api": "https://api.kuaifan.tv/api.php/provide/vod",
-      "name": "🚀 自动源_3 | 极速线ms",
-      "detail": "https://api.kuaifan.tv/api.php/provide/vod"
+      "name": "🚀 全网急速_4 | 1316ms",
+      "detail": "http://cj.ffzyapi.com/"
     }
   },
   "custom_category": [
     {
-      "name": "全网急速·搜刮",
+      "name": "极速·4K重型源",
       "type": "movie",
       "query": "4K"
+    },
+    {
+      "name": "全网搜刮精选",
+      "type": "movie",
+      "query": "华语"
     }
   ]
 }
