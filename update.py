@@ -103,7 +103,26 @@ def generate_config():
     }
 
     with open("tv.json", "w", encoding="utf-8") as f:
+        # --- 以下是优化后的保存逻辑 ---
+    import os
+
+    # 1. 确保创建 dist 文件夹
+    if not os.path.exists("dist"):
+        os.makedirs("dist")
+
+    # 2. 将 tv.json 存入 dist 文件夹
+    json_path = os.path.join("dist", "tv.json")
+    with open(json_path, "w", encoding="utf-8") as f:
         json.dump(config, f, ensure_ascii=False, indent=2)
+
+    # 3. 自动生成 _headers 文件，解决 DecoTV 拉取失败的兼容性问题
+    headers_path = os.path.join("dist", "_headers")
+    with open(headers_path, "w", encoding="utf-8") as f:
+        f.write("/tv.json\n")
+        f.write("  Content-Type: application/json; charset=utf-8\n")
+        f.write("  Access-Control-Allow-Origin: *\n")
+
+    print(f"✅ 配置已生成至 dist/tv.json，共 {len(api_site)} 个有效源")
 
 if __name__ == "__main__":
     generate_config()
