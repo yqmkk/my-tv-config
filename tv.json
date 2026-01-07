@@ -1,37 +1,37 @@
 {
   "cache_time": 9200,
   "api_site": {
-    "auto_source_0": {
+    "auto_0": {
       "api": "https://suoniapi.com/api.php/provide/vod",
-      "name": "🚀 全网急速_1 | 103ms",
+      "name": "🚀 极速源_01 | 75ms",
       "detail": "https://suoniapi.com/"
     },
-    "auto_source_1": {
+    "auto_1": {
       "api": "https://bfzyapi.com/api.php/provide/vod",
-      "name": "🚀 全网急速_2 | 208ms",
+      "name": "🚀 极速源_02 | 127ms",
       "detail": "https://bfzyapi.com/"
     },
-    "auto_source_2": {
+    "auto_2": {
       "api": "https://cj.lziapi.com/api.php/provide/vod",
-      "name": "🚀 全网急速_3 | 240ms",
+      "name": "🚀 极速源_03 | 436ms",
       "detail": "https://cj.lziapi.com/"
     },
-    "auto_source_3": {
+    "auto_3": {
       "api": "http://cj.ffzyapi.com/api.php/provide/vod",
-      "name": "🚀 全网急速_4 | 1090ms",
+      "name": "🚀 极速源_04 | 998ms",
       "detail": "http://cj.ffzyapi.com/"
     }
   },
   "custom_category": [
     {
-      "name": "极速·4K重型源",
-      "type": "movie",
-      "query": "4K"
-    },
-    {
-      "name": "全网搜刮精选",
+      "name": "华语",
       "type": "movie",
       "query": "华语"
+    },
+    {
+      "name": "4K重型",
+      "type": "movie",
+      "query": "4K"
     }
   ]
 }
