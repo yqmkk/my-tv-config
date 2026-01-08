@@ -1,7 +1,7 @@
 import json, requests, time, os, re, base58
 from concurrent.futures import ThreadPoolExecutor
 
-# 1. 极度扩张的接口池
+# 抓取池：2026年活跃的高吞吐量数据源
 POOL_URLS = [
     "https://raw.githubusercontent.com/gaotianliuyun/gao/master/0827.json",
     "https://itvbox.top/tv",
@@ -17,9 +17,8 @@ POOL_URLS = [
 ]
 
 def check_source(name, api):
-    """检测源是否通畅"""
+    """检测接口是否有效，宽容度设为 15 秒以保留高吞吐量蓝光源"""
     try:
-        # 针对 115/蓝光源，放宽到 15 秒超时
         res = requests.get(api, timeout=15, headers={'User-Agent': 'Mozilla/5.0'}, verify=False)
         if res.status_code == 200:
             return {"api": api, "name": name, "delay": res.elapsed.total_seconds()}
@@ -28,24 +27,22 @@ def check_source(name, api):
     return None
 
 def generate():
-    """主生成函数"""
     raw_links = set()
-    print("开始从全网聚合地址抓取接口...")
+    print("Step 1: 正在从全网搜刮接口...")
     
     for url in POOL_URLS:
         try:
             r = requests.get(url, timeout=10, verify=False)
-            # 提取符合 CMS 接口特征的链接
+            # 兼容正则匹配 API 接口
             found = re.findall(r'"(https?://[^"]+/api\.php/provide/vod[^"]*)"', r.text)
             for link in found:
                 raw_links.add(link)
         except:
             continue
     
-    print(f"搜刮到 {len(raw_links)} 个潜在接口，正在并行测速...")
+    print(f"找到潜在接口 {len(raw_links)} 个，开始并行检测...")
 
     valid_results = []
-    # 使用 50 线程并行检测
     with ThreadPoolExecutor(max_workers=50) as exe:
         futures = [exe.submit(check_source, f"源_{i}", url) for i, url in enumerate(list(raw_links))]
         for f in futures:
@@ -53,10 +50,9 @@ def generate():
             if res:
                 valid_results.append(res)
     
-    # 排序：按延迟排序
+    # 按照响应速度排序，取前 80 个
     valid_results.sort(key=lambda x: x['delay'])
-    # 取前 80 个最稳的站
-    final_list = valid_results[:80] 
+    final_list = valid_results[:80]
 
     api_site = {}
     for i, item in enumerate(final_list):
@@ -67,34 +63,32 @@ def generate():
             "detail": item['api'].split('api.php')[0]
         }
 
-    # 构造符合 DecoTV 专用格式的配置对象
+    # 构造标准 DecoTV 嵌套格式
     config = {
         "cache_time": 9200,
         "api_site": api_site,
         "custom_category": [
-            { "name": "华语", "type": "movie", "query": "华语" },
-            { "name": "4K重型", "type": "movie", "query": "4K" }
+            { "name": "华语精选", "type": "movie", "query": "华语" },
+            { "name": "4K极清", "type": "movie", "query": "4K" }
         ]
     }
 
-    # --- 输出流程 ---
-
-    # 1. 保存原始 JSON
+    # --- 保存 JSON 文件 ---
     with open("tv.json", "w", encoding="utf-8") as f:
         json.dump(config, f, ensure_ascii=False, indent=2)
-    print(f"✅ 已生成 tv.json (包含 {len(api_site)} 个源)")
-    
-    # 2. 核心：将 config 字典转换为 Base58 编码
-    # 先序列化成紧凑的字符串，再编码
-    json_bytes = json.dumps(config, ensure_ascii=False).encode('utf-8')
-    b58_text = base58.b58encode(json_bytes).decode('utf-8')
+    print(f"✅ tv.json 已更新")
+
+    # --- 生成 Base58 编码文件 ---
+    # 直接使用当前内存中的 config 对象，确保数据一致
+    compact_json = json.dumps(config, ensure_ascii=False).encode('utf-8')
+    b58_text = base58.b58encode(compact_json).decode('utf-8')
 
     with open("deco_b58.txt", "w", encoding="utf-8") as f:
         f.write(b58_text)
-    print("✅ 已生成 deco_b58.txt (Base58 编码完成)")
+    print("✅ deco_b58.txt 已更新")
 
 if __name__ == "__main__":
-    # 禁用 HTTPS 警告（防止脚本因某些源证书问题中断）
+    # 禁用 HTTPS 警告
     try:
         requests.packages.urllib3.disable_warnings()
     except:
