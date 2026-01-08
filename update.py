@@ -81,3 +81,16 @@ def generate():
 
 if __name__ == "__main__":
     generate()
+import json
+import base58
+
+# 假设 config 是你的 JSON 字典对象
+config = { ... } 
+
+# 转换为紧凑的 JSON 字符串并编码
+compact_json = json.dumps(config, ensure_ascii=False).encode('utf-8')
+b58_encoded_text = base58.b58encode(compact_json).decode('utf-8')
+
+# 保存到文件，方便从浏览器复制
+with open("deco_b58.txt", "w", encoding="utf-8") as f:
+    f.write(b58_encoded_text)
