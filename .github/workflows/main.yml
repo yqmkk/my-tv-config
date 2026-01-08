@@ -1,50 +1,35 @@
-name: AutoUpdate
+name: Update TV Sources
+
 on:
   schedule:
-    - cron: '0 20 * * *'
-  workflow_dispatch:
-
-permissions:
-  contents: write
-  pages: write
-  id-token: write
+    - cron: '0 22 * * *' # 北京时间每天早上 6 点运行
+  workflow_dispatch:      # 允许手动点击按钮运行
 
 jobs:
-  do-everything: # 合并为一个任务，避免冲突
+  build:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v3
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v4
         with:
           python-version: '3.9'
 
       - name: Install dependencies
-        run: pip install requests
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests base58
 
-      - name: Run Search Script
-        run: python update.py
+      - name: Run update script
+        run: python update_deco.py
 
-      - name: Commit and Push
+      - name: Commit and Push changes
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add tv.json
-          git commit -m "Update TV sources" || echo "No changes"
+          git add tv.json deco_b58.txt
+          git commit -m "Auto-update TV sources and Base58 config" || echo "No changes to commit"
           git push
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-
-      - name: Upload Pages Artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: '.' # 只在这里上传一次
-
-      - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v4
-- name: Install dependencies
-        run: |
-          pip install -r requirements.txt
