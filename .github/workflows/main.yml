@@ -45,3 +45,6 @@ jobs:
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
+- name: Install dependencies
+        run: |
+          pip install -r requirements.txt
