@@ -1,35 +1,40 @@
 {
   "cache_time": 9200,
   "api_site": {
-    "auto_0": {
-      "api": "https://cj.lziapi.com/api.php/provide/vod",
-      "name": "🚀 极速源_01 | 243ms",
-      "detail": "https://cj.lziapi.com/"
-    },
-    "auto_1": {
-      "api": "https://suoniapi.com/api.php/provide/vod",
-      "name": "🚀 极速源_02 | 251ms",
-      "detail": "https://suoniapi.com/"
-    },
-    "auto_2": {
+    "api_1": {
       "api": "https://bfzyapi.com/api.php/provide/vod",
-      "name": "🚀 极速源_03 | 716ms",
+      "name": "🚀 源_01 | 240ms",
       "detail": "https://bfzyapi.com/"
     },
-    "auto_3": {
+    "api_2": {
+      "api": "https://suoniapi.com/api.php/provide/vod",
+      "name": "🚀 源_02 | 248ms",
+      "detail": "https://suoniapi.com/"
+    },
+    "api_3": {
+      "api": "https://cj.lziapi.com/api.php/provide/vod",
+      "name": "🚀 源_03 | 317ms",
+      "detail": "https://cj.lziapi.com/"
+    },
+    "api_4": {
+      "api": "https://haiwaikan.com/api.php/provide/vod",
+      "name": "🚀 源_04 | 485ms",
+      "detail": "https://haiwaikan.com/"
+    },
+    "api_5": {
       "api": "http://cj.ffzyapi.com/api.php/provide/vod",
-      "name": "🚀 极速源_04 | 1613ms",
+      "name": "🚀 源_05 | 1253ms",
       "detail": "http://cj.ffzyapi.com/"
     }
   },
   "custom_category": [
     {
-      "name": "华语",
+      "name": "华语精选",
       "type": "movie",
       "query": "华语"
     },
     {
-      "name": "4K重型",
+      "name": "4K极清",
       "type": "movie",
       "query": "4K"
     }
