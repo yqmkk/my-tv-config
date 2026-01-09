@@ -2,29 +2,24 @@
   "cache_time": 9200,
   "api_site": {
     "api_1": {
-      "api": "https://haiwaikan.com/api.php/provide/vod",
-      "name": "🚀 源_01 | 216ms",
-      "detail": "https://haiwaikan.com/"
-    },
-    "api_2": {
       "api": "https://suoniapi.com/api.php/provide/vod",
-      "name": "🚀 源_02 | 309ms",
+      "name": "🚀 源_01 | 186ms",
       "detail": "https://suoniapi.com/"
     },
-    "api_3": {
+    "api_2": {
       "api": "https://cj.lziapi.com/api.php/provide/vod",
-      "name": "🚀 源_03 | 309ms",
+      "name": "🚀 源_02 | 628ms",
       "detail": "https://cj.lziapi.com/"
+    },
+    "api_3": {
+      "api": "https://bfzyapi.com/api.php/provide/vod",
+      "name": "🚀 源_03 | 1223ms",
+      "detail": "https://bfzyapi.com/"
     },
     "api_4": {
       "api": "http://cj.ffzyapi.com/api.php/provide/vod",
-      "name": "🚀 源_04 | 1178ms",
+      "name": "🚀 源_04 | 1672ms",
       "detail": "http://cj.ffzyapi.com/"
-    },
-    "api_5": {
-      "api": "https://bfzyapi.com/api.php/provide/vod",
-      "name": "🚀 源_05 | 1917ms",
-      "detail": "https://bfzyapi.com/"
     }
   },
   "custom_category": [
