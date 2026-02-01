@@ -3,22 +3,22 @@
   "api_site": {
     "api_1": {
       "api": "https://suoniapi.com/api.php/provide/vod",
-      "name": "🚀 源_01 | 122ms",
+      "name": "🚀 源_01 | 103ms",
       "detail": "https://suoniapi.com/"
     },
     "api_2": {
       "api": "https://cj.lziapi.com/api.php/provide/vod",
-      "name": "🚀 源_02 | 620ms",
+      "name": "🚀 源_02 | 113ms",
       "detail": "https://cj.lziapi.com/"
     },
     "api_3": {
       "api": "https://bfzyapi.com/api.php/provide/vod",
-      "name": "🚀 源_03 | 718ms",
+      "name": "🚀 源_03 | 429ms",
       "detail": "https://bfzyapi.com/"
     },
     "api_4": {
       "api": "http://cj.ffzyapi.com/api.php/provide/vod",
-      "name": "🚀 源_04 | 1107ms",
+      "name": "🚀 源_04 | 835ms",
       "detail": "http://cj.ffzyapi.com/"
     }
   },
