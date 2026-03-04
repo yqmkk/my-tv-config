@@ -24,12 +24,15 @@ jobs:
           pip install requests base58
 
       - name: Run update script
+        # 确保你的 Python 脚本名确实是 update_deco.py
         run: python update_deco.py
 
       - name: Commit and Push changes
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add tv.json deco_b58.txt
-          git commit -m "Auto-update TV sources and Base58 config" || echo "No changes to commit"
+          # 强制添加所有生成的 json 和 txt 文件
+          git add tv.json deco_b58.txt || echo "Files not found"
+          # 只有在有变动时才提交，防止 Action 报错
+          git commit -m "Auto-update TV sources and Base58 config" || exit 0
           git push
