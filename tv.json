@@ -3,68 +3,68 @@
   "api_site": {
     "api_1": {
       "api": "https://suoniapi.com/api.php/provide/vod",
-      "name": "💎索尼直连 | 333ms",
+      "name": "💎索尼直连 | 367ms",
       "detail": "https://suoniapi.com/"
     },
     "api_2": {
-      "api": "https://bfzyapi.com/api.php/provide/vod",
-      "name": "💎暴风高清 | 336ms",
-      "detail": "https://bfzyapi.com/"
-    },
-    "api_3": {
-      "api": "https://cj.lziapi.com/api.php/provide/vod",
-      "name": "💎量子4K | 353ms",
-      "detail": "https://cj.lziapi.com/"
-    },
-    "api_4": {
-      "api": "https://api.guangsuapi.com/api.php/provide/vod",
-      "name": "💎光速蓝光 | 406ms",
-      "detail": "https://api.guangsuapi.com/"
-    },
-    "api_5": {
-      "api": "https://dbzy.tv/api.php/provide/vod",
-      "name": "💎豆瓣电影 | 656ms",
-      "detail": "https://dbzy.tv/"
-    },
-    "api_6": {
-      "api": "https://api.1080zyku.com/inc/api_mac10.php",
-      "name": "💎1080P重型 | 995ms",
-      "detail": "https://api.1080zyku.com/inc/api_mac10.php"
-    },
-    "api_7": {
-      "api": "https://api.ffzyapi.com/api.php/provide/vod",
-      "name": "💎非凡直连 | 1001ms",
-      "detail": "https://api.ffzyapi.com/"
-    },
-    "api_8": {
       "api": "https://jszyapi.com/api.php/provide/vod",
-      "name": "💎极速 | 1199ms",
+      "name": "💎极速 | 369ms",
       "detail": "https://jszyapi.com/"
     },
+    "api_3": {
+      "api": "https://api.1080zyku.com/inc/api_mac10.php",
+      "name": "💎1080P重型 | 420ms",
+      "detail": "https://api.1080zyku.com/inc/api_mac10.php"
+    },
+    "api_4": {
+      "api": "https://dbzy.tv/api.php/provide/vod",
+      "name": "💎豆瓣电影 | 592ms",
+      "detail": "https://dbzy.tv/"
+    },
+    "api_5": {
+      "api": "https://api.ffzyapi.com/api.php/provide/vod",
+      "name": "💎非凡直连 | 644ms",
+      "detail": "https://api.ffzyapi.com/"
+    },
+    "api_6": {
+      "api": "https://bfzyapi.com/api.php/provide/vod",
+      "name": "💎暴风高清 | 717ms",
+      "detail": "https://bfzyapi.com/"
+    },
+    "api_7": {
+      "api": "https://cj.lziapi.com/api.php/provide/vod",
+      "name": "💎量子4K | 846ms",
+      "detail": "https://cj.lziapi.com/"
+    },
+    "api_8": {
+      "api": "https://api.guangsuapi.com/api.php/provide/vod",
+      "name": "💎光速蓝光 | 885ms",
+      "detail": "https://api.guangsuapi.com/"
+    },
     "api_9": {
-      "api": "http://cj.ffzyapi.com/api.php/provide/vod",
-      "name": "非凡 | 921ms",
-      "detail": "http://cj.ffzyapi.com/"
-    },
-    "api_10": {
-      "api": "http://ffzy1.tv/api.php/provide/vod/",
-      "name": "🥗┃非凡┃ | 970ms",
-      "detail": "http://ffzy1.tv/"
-    },
-    "api_11": {
       "api": "https://lzizy1.com/api.php/provide/vod/",
-      "name": "🥑┃量子┃ | 994ms",
+      "name": "🥑┃量子┃ | 900ms",
       "detail": "https://lzizy1.com/"
     },
-    "api_12": {
+    "api_10": {
       "api": "https://www.huyaapi.com/api.php/provide/vod/from/hym3u8",
-      "name": "🐯虎牙 | 1531ms",
+      "name": "🐯虎牙 | 1166ms",
       "detail": "https://www.huyaapi.com/"
     },
-    "api_13": {
+    "api_11": {
       "api": "https://hhzyapi.com/api.php/provide/vod/",
-      "name": "🦊火狐 | 556ms",
+      "name": "🦊火狐 | 398ms",
       "detail": "https://hhzyapi.com/"
+    },
+    "api_12": {
+      "api": "http://ffzy1.tv/api.php/provide/vod/",
+      "name": "🥗┃非凡┃ | 504ms",
+      "detail": "http://ffzy1.tv/"
+    },
+    "api_13": {
+      "api": "http://cj.ffzyapi.com/api.php/provide/vod",
+      "name": "非凡 | 613ms",
+      "detail": "http://cj.ffzyapi.com/"
     }
   },
   "custom_category": [
